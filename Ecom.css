@@ -2,8 +2,17 @@
     font-family: 'Questrial';
     src: url(Fonts/Questrial/Questrial-Regular.ttf);
 }
+
+
+.headdiv
+{
+    background-color: rgb(201, 211, 158);
+    padding-top: 60px;
+    padding-bottom: 2cm;
+}
 .main
 {
+    margin: auto;
     text-align: center;
     color: rgb(37, 180, 37);
     font-family: 'Questrial';
