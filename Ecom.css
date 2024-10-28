@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Questrial';
+    src: url(Fonts/Questrial/Questrial-Regular.ttf);
+}
+.main
+{
+    text-align: center;
+    color: rgb(37, 180, 37);
+    font-family: 'Questrial';
+    font-size: 70px;
+    
+}
