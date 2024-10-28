@@ -3,18 +3,22 @@
     src: url(Fonts/Questrial/Questrial-Regular.ttf);
 }
 
-
-.headdiv
+.body
 {
-    background-color: rgb(201, 211, 158);
+    background-image: linear-gradient(#52dfe1,#bbf1eb);
+    height: 20cm;
+}
+.headdiv
+{   
+   
     padding-top: 60px;
-    padding-bottom: 2cm;
+    
 }
 .main
 {
     margin: auto;
     text-align: center;
-    color: rgb(37, 180, 37);
+    color: rgb(9, 78, 105);
     font-family: 'Questrial';
     font-size: 70px;
     
