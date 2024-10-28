@@ -6,6 +6,10 @@
     font-family: "parisienne";
     src: url(Fonts/Parisienne/Parisienne-Regular.ttf);
 }
+@font-face {
+    font-family: "kalam";
+    src: url(Fonts/PlaypenSans-VariableFont_wght.ttf);
+}
 
 .body
 {
@@ -32,4 +36,37 @@
     font-size: 35px;
     font-family: 'parisienne';
     font-weight: 900;
+}
+
+.product
+{   width: 35cm;
+    display: flex;
+    margin-top: 4cm;
+    position: relative;
+    height: 4cm;
+    text-align: center;
+    margin-left: 3cm;
+   
+    
+}
+.item
+{
+    margin-left: 2cm;
+    background-color: azure;
+    font-family: 'Questrial';
+    color: rgb(48, 88, 88);
+  
+}
+.addCart
+{
+    background-color: azure;
+    font-family: 'kalam';
+    border-radius: 1cm;
+    background-color: #52dfe1;
+}
+.addCart:hover
+{
+   background-color:rgb(9, 78, 105); 
+   color:rgb(249, 249, 249);
+   
 }
