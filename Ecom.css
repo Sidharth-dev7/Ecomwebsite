@@ -84,8 +84,12 @@
     font-family: 'Questrial';
     color: rgb(48, 88, 88);
     border-radius: 1cm;
-    height: 10cm;
+    height: 12cm;
     width: 10cm;
     margin: auto;
     background-color: rgb(173, 239, 238);border: 2px,solid,rgb(110, 152, 160);
+}
+.butt
+{
+    flex-direction: row;
 }
