@@ -13,7 +13,7 @@
 
 .body
 {
-    background-image: linear-gradient(#52dfe1,#bbf1eb);
+    background-image: linear-gradient(#52dfe1,#266877);
     height: 30cm;
     width:98vw;
 }
@@ -55,11 +55,9 @@
 {
     margin-top: 1cm;
     margin-left: 2cm;
-    background-color: azure;
     font-family: 'Questrial';
     color: rgb(48, 88, 88);
     border-radius: 1cm;
-    
   
 }
 .addCart
@@ -68,10 +66,23 @@
     font-family: 'kalam';
     border-radius: 1cm;
     background-color: #52dfe1;
+    
 }
 .addCart:hover
 {
    background-color:rgb(9, 78, 105); 
    color:rgb(249, 249, 249);
    
+}
+.details
+{
+    position: relative;
+    top: 2.5cm;
+    font-family: 'Questrial';
+    color: rgb(48, 88, 88);
+    border-radius: 1cm;
+    height: 10cm;
+    width: 10cm;
+    margin: auto;
+    background-color: rgb(173, 239, 238);border: 2px,solid,rgb(110, 152, 160);
 }
