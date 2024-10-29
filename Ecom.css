@@ -76,6 +76,7 @@
 }
 .details
 {
+    left: -12cm;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -91,5 +92,5 @@
 }
 .butt
 {
-    flex-direction: row;
+    flex-direction: row ;
 }
