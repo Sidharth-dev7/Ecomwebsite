@@ -10,6 +10,10 @@
     font-family: "kalam";
     src: url(Fonts/PlaypenSans-VariableFont_wght.ttf);
 }
+@font-face {
+    font-family: "sans";
+    src: url(Fonts/Noto_Sans/NotoSans-VariableFont_wdth\,wght.ttf);
+}
 .propara
 {
     width: 6cm;

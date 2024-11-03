@@ -9,17 +9,16 @@
 <body class="body"style="height :19.4cm;" >
     <div>
     <b class="main">Bagit</b>
-    <a class= "nav" style="padding-left:17cm;" href="Ecom.html">Home</a>
+    <a class= "nav" style="padding-left:17cm;" href="cart.html">Cart</a>
     
-    <a href="Ecompage3.html"class="nav" style="padding-left: 1cm;" target="_blank">Checkout</a>
     <a href="Ecom.html"class="nav" style="padding-left: 1cm;">Add Items</a>
 </div>
 
-    <section id="p-details" class="p1" style="padding-top: 2cm; padding-left: 2cm;">
+    <section id="p-details" class="p1" style="padding-top: 4cm; padding-left: 2cm;">
         <div class="single-pro-img">
             <img  width="100%" id="receivedImage" alt="">
         
-        <div class="small-img-grp">
+        <!-- <div class="small-img-grp">
             <div class="small-img-col">
                 <img src="pics/-original-imahfphrzsggqd6q.jpeg.jpg" width="100%" class="small-img" alt=""> 
             </div>
@@ -32,23 +31,35 @@
             <div class="small-img-col">
                 <img src="" width="100%" class="small-img" alt="">
             </div>
-        </div>
+        </div> -->
         </div>
     </div>
 
     <div class="single-pro-details">
-        <h1 >custom bag</h1>
-        <p>............</p>
-        <h3>price:   </h3>
+        <h1 >Product Details</h1>
+        <p id="receivedPara" style="font-family: 'sans'; color: rgb(20, 17, 68);"></p>
         </select>
-        <input type="number" value="1">
+        <div class="quantity">
+            <h3 style="position:relative; bottom: .5cm; left: -1cm;">Quantity</h3>
+            <button id="decrease-quantity" class="addCart" style="height: .6cm; width: 1cm; position: relative; left: -.5cm;">-</button>
+            <span id="quantity" style="position: relative;right: .25cm;">1</span>
+            <button id="increase-quantity" class="addCart" style="height: .6cm; width: 1cm;">+</button>
+        </div>
         <button class="addCart"> Add to Cart</button>
     </div>
 
     </section>
 
     <script src="ecom.js"></script>
-   
+    <script>
+        // Inline script to receive the paragraph when the DOM is fully loaded
+        document.addEventListener('DOMContentLoaded', receiveParagraph);
+        document.addEventListener('DOMContentLoaded', receiveParagraph1);
+        document.addEventListener('DOMContentLoaded', receiveParagraph2);
+        document.addEventListener('DOMContentLoaded', receiveParagraph3);
+        document.addEventListener('DOMContentLoaded', receiveParagraph4);
+        document.addEventListener('DOMContentLoaded', receiveParagraph5);
+    </script>
 
 </body>
 </html>

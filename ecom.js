@@ -104,19 +104,103 @@ if (window.location.pathname.endsWith('Ecompage2.html')) {
 }
 
 
-// Function to send the image URL to second.html
-if (window.location.pathname.endsWith('Ecom.html')) {
-    document.getElementById('sendButton6').addEventListener('click', function() {
-        const imgSrc6 = document.getElementById('imageToSend6').src;
-        localStorage.setItem('imageSrc', imgSrc6); // Store the image source in localStorage
-        window.location.href = 'Ecompage2.html'; // Redirect to the second page
-    });
+// Update quantity buttons
+document.getElementById('increase-quantity').addEventListener('click', () => {
+    let quantity = parseInt(document.getElementById('quantity').innerText);
+    document.getElementById('quantity').innerText = quantity + 1;
+});
+
+document.getElementById('decrease-quantity').addEventListener('click', () => {
+    let quantity = parseInt(document.getElementById('quantity').innerText);
+    if (quantity > 1) {
+        document.getElementById('quantity').innerText = quantity - 1;
+    }
+});
+
+
+
+
+function sendParagraph() {
+    const para = document.getElementById('paragraph').innerText;
+    localStorage.setItem('paragraph', para);
+    window.location.href = 'Ecompage2.html';
 }
 
-// Function to display the image in second.html
-if (window.location.pathname.endsWith('Ecompage2.html')) {
-    const imgSrc6 = localStorage.getItem('imageSrc'); // Retrieve the image source from localStorage
-    if (imgSrc6) {
-        document.getElementById('receivedImage').src = imgSrc6; // Set the image source
+function receiveParagraph() {
+    const para = localStorage.getItem('paragraph');
+    if (para) {
+        document.getElementById('receivedPara').innerText = para;
+        
+    }
+}
+
+function sendParagraph1() {
+    const para1 = document.getElementById('paragraph1').innerText;
+    localStorage.setItem('paragraph', para1);
+    window.location.href = 'Ecompage2.html';
+}
+
+function receiveParagraph1() {
+    const para1 = localStorage.getItem('paragraph');
+    if (para1) {
+        document.getElementById('receivedPara').innerText = para1;
+        
+    }
+}
+
+function sendParagraph2() {
+    const para2 = document.getElementById('paragraph2').innerText;
+    localStorage.setItem('paragraph', para2);
+    window.location.href = 'Ecompage2.html';
+}
+
+function receiveParagraph2() {
+    const para2 = localStorage.getItem('paragraph');
+    if (para2) {
+        document.getElementById('receivedPara').innerText = para2;
+        
+    }
+}
+
+
+function sendParagraph3() {
+    const para3 = document.getElementById('paragraph3').innerText;
+    localStorage.setItem('paragraph', para3);
+    window.location.href = 'Ecompage2.html';
+}
+
+function receiveParagraph3() {
+    const para3 = localStorage.getItem('paragraph');
+    if (para3) {
+        document.getElementById('receivedPara').innerText = para3;
+        
+    }
+}
+
+function sendParagraph4() {
+    const para4 = document.getElementById('paragraph4').innerText;
+    localStorage.setItem('paragraph', para4);
+    window.location.href = 'Ecompage2.html';
+}
+
+function receiveParagraph4() {
+    const para4 = localStorage.getItem('paragraph');
+    if (para4) {
+        document.getElementById('receivedPara').innerText = para4;
+        
+    }
+}
+
+function sendParagraph5() {
+    const para5 = document.getElementById('paragraph5').innerText;
+    localStorage.setItem('paragraph', para5);
+    window.location.href = 'Ecompage2.html';
+}
+
+function receiveParagraph5() {
+    const para5 = localStorage.getItem('paragraph');
+    if (para5) {
+        document.getElementById('receivedPara').innerText = para5;
+        
     }
 }
