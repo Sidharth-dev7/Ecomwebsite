@@ -15,7 +15,6 @@ if (window.location.pathname.endsWith('Ecompage2.html')) {
     }
 }
 
-
 // Function to send the image URL to second.html
 if (window.location.pathname.endsWith('Ecom.html')) {
     document.getElementById('sendButton1').addEventListener('click', function() {
@@ -27,11 +26,12 @@ if (window.location.pathname.endsWith('Ecom.html')) {
 
 // Function to display the image in second.html
 if (window.location.pathname.endsWith('Ecompage2.html')) {
-    const imgSrc1 = localStorage.getItem('imageSrc1'); // Retrieve the image source from localStorage
+    const imgSrc1 = localStorage.getItem('imageSrc'); // Retrieve the image source from localStorage
     if (imgSrc1) {
         document.getElementById('receivedImage').src = imgSrc1; // Set the image source
     }
 }
+
 
 // Function to send the image URL to second.html
 if (window.location.pathname.endsWith('Ecom.html')) {
@@ -44,12 +44,11 @@ if (window.location.pathname.endsWith('Ecom.html')) {
 
 // Function to display the image in second.html
 if (window.location.pathname.endsWith('Ecompage2.html')) {
-    const imgSrc2 = localStorage.getItem('imageSrc2'); // Retrieve the image source from localStorage
+    const imgSrc2 = localStorage.getItem('imageSrc'); // Retrieve the image source from localStorage
     if (imgSrc2) {
         document.getElementById('receivedImage').src = imgSrc2; // Set the image source
     }
 }
-
 
 
 // Function to send the image URL to second.html
@@ -63,14 +62,11 @@ if (window.location.pathname.endsWith('Ecom.html')) {
 
 // Function to display the image in second.html
 if (window.location.pathname.endsWith('Ecompage2.html')) {
-    const imgSrc3 = localStorage.getItem('imageSrc4'); // Retrieve the image source from localStorage
+    const imgSrc3 = localStorage.getItem('imageSrc'); // Retrieve the image source from localStorage
     if (imgSrc3) {
         document.getElementById('receivedImage').src = imgSrc3; // Set the image source
     }
 }
-
-
-
 
 // Function to send the image URL to second.html
 if (window.location.pathname.endsWith('Ecom.html')) {
@@ -83,13 +79,11 @@ if (window.location.pathname.endsWith('Ecom.html')) {
 
 // Function to display the image in second.html
 if (window.location.pathname.endsWith('Ecompage2.html')) {
-    const imgSrc4 = localStorage.getItem('imageSrc4'); // Retrieve the image source from localStorage
+    const imgSrc4 = localStorage.getItem('imageSrc'); // Retrieve the image source from localStorage
     if (imgSrc4) {
         document.getElementById('receivedImage').src = imgSrc4; // Set the image source
     }
 }
-
-
 
 
 // Function to send the image URL to second.html
@@ -103,18 +97,16 @@ if (window.location.pathname.endsWith('Ecom.html')) {
 
 // Function to display the image in second.html
 if (window.location.pathname.endsWith('Ecompage2.html')) {
-    const imgSrc5 = localStorage.getItem('imageSrc5'); // Retrieve the image source from localStorage
+    const imgSrc5 = localStorage.getItem('imageSrc'); // Retrieve the image source from localStorage
     if (imgSrc5) {
         document.getElementById('receivedImage').src = imgSrc5; // Set the image source
     }
 }
 
 
-
-
 // Function to send the image URL to second.html
 if (window.location.pathname.endsWith('Ecom.html')) {
-    document.getElementById('sendButton1').addEventListener('click', function() {
+    document.getElementById('sendButton6').addEventListener('click', function() {
         const imgSrc6 = document.getElementById('imageToSend6').src;
         localStorage.setItem('imageSrc', imgSrc6); // Store the image source in localStorage
         window.location.href = 'Ecompage2.html'; // Redirect to the second page
@@ -123,7 +115,7 @@ if (window.location.pathname.endsWith('Ecom.html')) {
 
 // Function to display the image in second.html
 if (window.location.pathname.endsWith('Ecompage2.html')) {
-    const imgSrc6 = localStorage.getItem('imageSrc1'); // Retrieve the image source from localStorage
+    const imgSrc6 = localStorage.getItem('imageSrc'); // Retrieve the image source from localStorage
     if (imgSrc6) {
         document.getElementById('receivedImage').src = imgSrc6; // Set the image source
     }
