@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
     
+
+    </style>
+
     <link rel="stylesheet" href="Ecom.css">
 </head>
 <body class="body">
@@ -14,40 +18,81 @@
         
     </div>
     <script src="ecom.js"></script>
+    
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-    const cart = JSON.parse(localStorage.getItem('cart')) || [];
-    const cartContainer = document.createElement('div');
-
-    if (cart.length === 0) {
-        cartContainer.innerHTML = '<p>Your cart is empty.</p>';
-    } else {
-        cart.forEach((item, index) => {
-            const itemDiv = document.createElement('div');
-            itemDiv.innerHTML = `
-                <p >${item.description}</p>
-                <p>Price: ${item.price}</p>
-                <p>Quantity: ${item.quantity}</p>
-                <p>Total: ${item.totalPrice}</p>
-                <button class="remove-item" data-index="${index}" id="removebut">Remove</button>
-            `;
-            cartContainer.appendChild(itemDiv);
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const cartContainer = document.createElement('div');
+            cartContainer.style.display = 'flex';
+            cartContainer.style.flexDirection = 'column';
+            cartContainer.style.alignItems = 'center'; // Center items horizontally
+            cartContainer.style.justifyContent = 'center'; // Center items vertically
+            cartContainer.style.textAlign = 'center'; // Center text
+    
+            if (cart.length === 0) {
+                const emptyMessage = document.createElement('p');
+                emptyMessage.innerText = 'Your cart is empty.';
+                cartContainer.appendChild(emptyMessage);
+            } else {
+                cart.forEach((item, index) => {
+                    const itemDiv = document.createElement('div');
+                    itemDiv.style.margin = '10px 0'; // Margin between items
+                    itemDiv.style.backgroundColor = 'white'; // Item background
+                    itemDiv.style.padding = '50px';
+                    itemDiv.style.borderRadius = '8px';
+                    itemDiv.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)'; // Shadow for items
+    
+                    const description = document.createElement('p');
+                    description.innerText = item.description;
+                    itemDiv.appendChild(description);
+    
+                    const price = document.createElement('p');
+                    price.innerText = `Price: ${item.price}`;
+                    itemDiv.appendChild(price);
+    
+                    const quantity = document.createElement('p');
+                    quantity.innerText = `Quantity: ${item.quantity}`;
+                    itemDiv.appendChild(quantity);
+    
+                    const total = document.createElement('p');
+                    total.innerText = `Total: ${item.totalPrice}`;
+                    itemDiv.appendChild(total);
+    
+                    const removeButton = document.createElement('button');
+                    removeButton.innerText = 'Remove';
+                    removeButton.classList.add('remove-item');
+                    removeButton.dataset.index = index;
+                    removeButton.style.backgroundColor = '#ff4d4d'; // Button color
+                    removeButton.style.color = 'white';
+                    removeButton.style.border = 'none';
+                    removeButton.style.padding = '10px 15px';
+                    removeButton.style.borderRadius = '5px';
+                    removeButton.style.cursor = 'pointer';
+    
+                    removeButton.addEventListener('mouseenter', () => {
+                        removeButton.style.backgroundColor = '#ff1a1a'; // Hover color
+                    });
+                    removeButton.addEventListener('mouseleave', () => {
+                        removeButton.style.backgroundColor = '#ff4d4d'; // Reset color
+                    });
+    
+                    itemDiv.appendChild(removeButton);
+                    cartContainer.appendChild(itemDiv);
+                });
+            }
+    
+            document.body.appendChild(cartContainer);
+    
+            // Handle removing items
+            cartContainer.addEventListener('click', (event) => {
+                if (event.target.classList.contains('remove-item')) {
+                    const index = event.target.dataset.index;
+                    cart.splice(index, 1); // Remove item from cart
+                    localStorage.setItem('cart', JSON.stringify(cart));
+                    location.reload(); // Reload the page to reflect changes
+                }
+            });
         });
-    }
-
-    document.body.appendChild(cartContainer);
-
-    // Handle removing items
-    cartContainer.addEventListener('click', (event) => {
-        if (event.target.classList.contains('remove-item')) {
-            const index = event.target.dataset.index;
-            cart.splice(index, 1); // Remove item from cart
-            localStorage.setItem('cart', JSON.stringify(cart));
-            location.reload(); // Reload the page to reflect changes
-        }
-    });
-});
-
     </script>
 </body>
 </html>
