@@ -19,6 +19,7 @@
             <img src="pics/-original-imah2c454bzw3jg6.jpeg.jpg" alt="" style="border: 2px,solid,rgb(166, 214, 222);height: 220px; width: 225px;" id="imageToSend">
             <h2>Black bag</h2>
             <h3>price:1800</h3>
+            <p style="display: none;" id="p1">Black bag</p>
             <p class="propara" style="display: none;" id="paragraph">Introducing our elegant Black Leather Bag, crafted from premium full-grain leather that combines durability with a luxurious feel. 
                 This versatile bag features a spacious interior designed to hold all your essentials, including a padded compartment for laptops up to 15 inches,
                 along with additional pockets for organized storage. With adjustable and removable shoulder straps, plus sturdy handles, it offers multiple carrying options for any occasion. 
@@ -32,6 +33,7 @@
             <img src="pics/download (1).jpeg" alt="" style="height: 220px; width: 225px;" id="imageToSend1">
             <h2>Pink Bag</h2>
             <h3>price:2800</h3>
+            <p style="display: none;" id="p2">Pink Bag</p>
             <p class="propara" style="display: none;" id="paragraph1" >Introducing our chic Pink Leather Bag, a perfect blend of playful elegance and practicality. 
                 Crafted from high-quality, supple leather, this bag features a soft pastel hue that adds a pop of color to any outfit. 
                 The spacious interior is designed to keep your essentials organized, with a padded compartment ideal for tablets or small laptops, as well as handy pockets for your phone and accessories. 
@@ -45,6 +47,7 @@
             <img src="pics/pic5.jpeg" alt=""style="height: 220px; width: 235px;" id="imageToSend2">
             <h2>Blue bag</h2>
             <h3>price:3700</h3>
+            <p style="display: none;" id="p3">Blue bag</p>
             <p class="propara" style="display: none;" id="paragraph2">Introducing our eye-catching Blue Leather Bag, designed for those who love to stand out. 
                 Made from high-quality leather, this bag showcases a vibrant hue that brings a fresh pop of color to your wardrobe. Its roomy interior is 
                 perfect for storing your daily essentials, featuring a padded section for tablets and additional pockets for organization. The adjustable 
@@ -57,6 +60,7 @@
            <img src="pics/images.jpeg" alt="" id="imageToSend3">
             <h2>Red bag</h2>
             <h3>price:4800</h3>
+            <p style="display: none;" id="p4">Red bag</p>
             <p class="propara" style="display: none;" id="paragraph3">Make a bold statement with our striking Red Leather Bag, designed for the confident individual. 
                 Crafted from luxurious, durable leather, this bag features a rich, vibrant color that instantly elevates any look. Its spacious interior is equipped 
                 with a padded compartment for devices and multiple pockets for your essentials, ensuring you stay organized on the go. With both an adjustable shoulder 
@@ -70,6 +74,7 @@
             <img src="pics/download.jpeg" alt="" id="imageToSend4">
             <h2>White bag</h2>
             <h3>price:1800</h3>
+            <p style="display: none;" id="p5">White bag</p>
             <p class="propara" style="display: none;" id="paragraph4">Meet our stunning White Leather Bag, a symbol of sophistication and versatility. 
                 Crafted from premium, soft leather, this bag features a clean, minimalist design that effortlessly elevates any outfit. The spacious interior 
                 includes a padded compartment for tablets and various pockets to keep your essentials organized. With a chic adjustable shoulder strap and 
@@ -83,6 +88,7 @@
             <img src="pics/download (1).jpeg" alt="" style="height: 220px; width: 225px;" id="imageToSend5">
             <h2>Pink Bag</h2>
             <h3>price:2800</h3>
+            <p style="display: none;" id="p6">Pink bag</p>
             <p class="propara" style="display: none;" id="paragraph5">Introducing our chic Pink Leather Bag, a perfect blend of playful elegance and practicality. 
                 Crafted from high-quality, supple leather, this bag features a soft pastel hue that adds a pop of color to any outfit. 
                 The spacious interior is designed to keep your essentials organized, with a padded compartment ideal for tablets or small laptops, as well as handy pockets for your phone and accessories. 
@@ -108,16 +114,38 @@
 
         document.getElementById('sendButton').addEventListener('click', function() {
     localStorage.setItem('productPrice', 1800); // For Black bag
-    localStorage.setItem('productDesc', document.getElementById('paragraph').innerText);
+    localStorage.setItem('productDesc', document.getElementById('p1').innerText);
 });
 
 // Repeat for other products
 document.getElementById('sendButton1').addEventListener('click', function() {
     localStorage.setItem('productPrice', 2800); // For Pink bag
-    localStorage.setItem('productDesc', document.getElementById('paragraph1').innerText);
+    localStorage.setItem('productDesc', document.getElementById('p2').innerText);
 });
 
-// Add similar listeners for the rest of the products...
+
+document.getElementById('sendButton2').addEventListener('click', function() {
+    localStorage.setItem('productPrice', 25000); 
+    localStorage.setItem('productDesc', document.getElementById('p3').innerText);
+});
+
+document.getElementById('sendButton3').addEventListener('click', function() {
+    localStorage.setItem('productPrice', 3800); 
+    localStorage.setItem('productDesc', document.getElementById('p4').innerText);
+});
+
+// Repeat for other products
+document.getElementById('sendButton4').addEventListener('click', function() {
+    localStorage.setItem('productPrice', 4800); 
+    localStorage.setItem('productDesc', document.getElementById('p5').innerText);
+});
+
+
+document.getElementById('sendButton5').addEventListener('click', function() {
+    localStorage.setItem('productPrice', 5800);
+    localStorage.setItem('productDesc', document.getElementById('p6').innerText);
+});
+
 
     </script>
 </body>
