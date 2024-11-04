@@ -25,11 +25,11 @@
         cart.forEach((item, index) => {
             const itemDiv = document.createElement('div');
             itemDiv.innerHTML = `
-                <p>${item.description}</p>
+                <p >${item.description}</p>
                 <p>Price: ${item.price}</p>
                 <p>Quantity: ${item.quantity}</p>
                 <p>Total: ${item.totalPrice}</p>
-                <button class="remove-item" data-index="${index}">Remove</button>
+                <button class="remove-item" data-index="${index}" id="removebut">Remove</button>
             `;
             cartContainer.appendChild(itemDiv);
         });

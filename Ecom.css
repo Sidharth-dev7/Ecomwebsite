@@ -127,3 +127,13 @@
     display: flex;
     margin-left: 1cm;
 }
+
+
+
+#removebut
+{
+    background-color: azure;
+    font-family: 'kalam';
+    border-radius: 1cm;
+    background-color: #52dfe1;
+}
