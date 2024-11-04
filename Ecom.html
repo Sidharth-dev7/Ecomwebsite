@@ -103,6 +103,22 @@
         document.getElementById('sendButton3').onclick = sendParagraph3;
         document.getElementById('sendButton4').onclick = sendParagraph4;
         document.getElementById('sendButton5').onclick = sendParagraph5;
+
+
+
+        document.getElementById('sendButton').addEventListener('click', function() {
+    localStorage.setItem('productPrice', 1800); // For Black bag
+    localStorage.setItem('productDesc', document.getElementById('paragraph').innerText);
+});
+
+// Repeat for other products
+document.getElementById('sendButton1').addEventListener('click', function() {
+    localStorage.setItem('productPrice', 2800); // For Pink bag
+    localStorage.setItem('productDesc', document.getElementById('paragraph1').innerText);
+});
+
+// Add similar listeners for the rest of the products...
+
     </script>
 </body>
 </html>
