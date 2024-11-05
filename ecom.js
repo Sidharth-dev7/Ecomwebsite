@@ -206,32 +206,10 @@ function receiveParagraph5() {
 }
 
 
-
-// document.addEventListener('DOMContentLoaded', () => {
-//     const price = localStorage.getItem('productPrice');
-//     const description = localStorage.getItem('productDesc');
-//     document.getElementById('receivedPara').innerText = description;
-
-//     // Add to cart button event listener
-//     document.getElementById('addToCart').addEventListener('click', () => {
-//         const quantity = parseInt(document.getElementById('quantity').innerText);
-//         const totalPrice = quantity * price;
-
-//         alert(`Item added to cart: ${quantity} x ${price} = ${totalPrice}`);
-
-//         // Save to cart
-//         let cart = JSON.parse(localStorage.getItem('cart')) || [];
-//         cart.push({ description, price, quantity, totalPrice });
-//         localStorage.setItem('cart', JSON.stringify(cart));
-        
-//         window.location.href = 'cart.html'; // Redirect to cart page
-//     });
-// });
-
 document.addEventListener('DOMContentLoaded', () => {
     const price = localStorage.getItem('productPrice');
     const description = localStorage.getItem('productDesc');
-    const image = document.getElementById('receivedImage').src;  // Get the image URL from localStorage
+    const image = document.getElementById('receivedImage').src;  // Get the image directly from storage
     document.getElementById('receivedPara').innerText = description;
 
     // Add to cart button event listener
