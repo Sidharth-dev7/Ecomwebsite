@@ -14,7 +14,7 @@
 <body class="body">
     <div style="padding-bottom: 2cm;">
         <b class="main">Bagit</b>
-        <a class= "nav" style="padding-left:17cm;"  href="Ecom.html">Add Items</a>
+        <a class= "nav" style="padding-left:17cm; text-decoration: none;"  href="Ecom.html">Add Items</a>
         
     </div>
     <script src="ecom.js"></script>
@@ -32,12 +32,14 @@
             if (cart.length === 0) {
                 const emptyMessage = document.createElement('p');
                 emptyMessage.innerText = 'Your cart is empty.';
+                emptyMessage.style.fontSize="3cm";
+                emptyMessage.style.color="rgb(9, 78, 105)";
                 cartContainer.appendChild(emptyMessage);
             } else {
                 cart.forEach((item, index) => {
                     const itemDiv = document.createElement('div');
                     itemDiv.style.margin = '10px 0'; // Margin between items
-                    itemDiv.style.backgroundColor = 'white'; // Item background
+                    itemDiv.style.backgroundColor = 'rgb(173, 239, 238)'; // Item background
                     itemDiv.style.padding = '50px';
                     itemDiv.style.borderRadius = '8px';
                     itemDiv.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)'; // Shadow for items
